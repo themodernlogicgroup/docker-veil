@@ -1,8 +1,6 @@
 # Dockerfile for Veil–Framework (https://www.veil-framework.com)
 FROM fedora
 
-LABEL maintainer="jon@themodernlogicgroup.com"
-
 RUN dnf -y update && dnf -y install git which sudo python3-crypto unzip xorg-x11-server-Xvfb ruby && dnf clean all
 
 # Install Metasploit
